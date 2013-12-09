@@ -5,6 +5,7 @@
       <p>ORG Websites is an affiliate of <a href="http://ampnetmedia.com/">ampnetmedia</a>. Ben's Heart Foundation &copy;<?php echo date('Y'); ?> all rights reserved.</p>
             </section>
         </footer>
+        <a href="https://plus.google.com/106082234206461067527" rel="publisher">Google+</a>
 
         <!-- load jQuery if needed -->
         <script src="js/main.js"></script>
