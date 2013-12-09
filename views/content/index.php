@@ -5,8 +5,8 @@ require_once "../layout/header.php";
 require_once "../content/sections.php";
 require_once "../contact/contact_data.php";
 ?>
-<section class="main-banner clearfix" style="background: url(/assets/img/main_banner.jpg) no-repeat bottom center; background-size: cover;">
-    <h2>Ben's Heart was founded to help families going through the pains of having a child born with heart abnormalities.</h2>
+<section class="main-banner clearfix" style="background: url(<?php echo $Website->MainBannerImg(); ?>) no-repeat bottom center; background-size: cover;">
+    <h2><?php echo $Website->MainBannerText(); ?></h2>
 </section>
 
 <section class="about-section clearfix">
