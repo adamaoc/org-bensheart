@@ -8,6 +8,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title><?php echo $Site->Headline; ?></title>
         <meta name="description" content="Ben's Heart was founded to help families going through the pains of having a child born with heart abnormalities.">
+        
+		<meta name="google-site-verification" content="EbBfOomCrw7PbTEZLO4NxBMxHaPMSHCaTJD5592YgGQ" />
+		
         <meta name="viewport" content="width=device-width">
 		<link rel="shortcut icon" href="favicon.ico">
         <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
@@ -22,7 +25,7 @@
             <?php if(isset($Social)) { ?>
             <nav class="pri-nav">
                 <?php foreach ($Social as $link) { ?>
-                    <a href="<?php echo $link['url']; ?>" class="<?php echo $link['label']; ?>">
+                    <a href="<?php echo $link['url']; ?>" rel="<?php echo $link['rel']; ?>" class="<?php echo $link['label']; ?>">
                         <?php echo $link['name']; ?>
                     </a>
                 <?php } ?>

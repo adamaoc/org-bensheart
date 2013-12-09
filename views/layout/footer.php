@@ -5,11 +5,18 @@
       <p>ORG Websites is an affiliate of <a href="http://ampnetmedia.com/">ampnetmedia</a>. Ben's Heart Foundation &copy;<?php echo date('Y'); ?> all rights reserved.</p>
             </section>
         </footer>
-        <a href="https://plus.google.com/106082234206461067527" rel="publisher">Google+</a>
 
-        <!-- load jQuery if needed -->
         <script src="js/main.js"></script>
 
-        <!-- load anylitycs script if needed -->
+        <!-- load anylitycs script  -->
+        <script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-9674179-9', 'bensheart.org');
+			ga('send', 'pageview');
+		</script>
     </body>
 </html>
