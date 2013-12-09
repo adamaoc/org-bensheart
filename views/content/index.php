@@ -1,5 +1,6 @@
 <?php
 require_once "../../core/init.php";
+require_once "../content/sociallinks.php";
 require_once "../layout/header.php";
 require_once "../content/sections.php";
 require_once "../contact/contact_data.php";

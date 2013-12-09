@@ -15,22 +15,14 @@
         <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
-        <?php 
-        // echo "<pre>";
-        //     print_r($Site);
-        // echo "<br>";
-        //     print_r($Info);
-        // echo "</pre>";
-        ?>
         <a id="top"></a>
         <header class="site-header clearfix">
             <h1 class="site-logo"><a href="/"><?php echo $Site->Headline; ?></a></h1>
-            <?php if($data->site->social) {
-                $social = $data->site->social; ?>
+            <?php if(isset($Social)) { ?>
             <nav class="pri-nav">
-                <?php foreach ($social as $link) { ?>
-                    <a href="<?php echo $link->url; ?>" class="<?php echo $link->label; ?>">
-                        <?php echo $link->name; ?>
+                <?php foreach ($Social as $link) { ?>
+                    <a href="<?php echo $link['url']; ?>" class="<?php echo $link['label']; ?>">
+                        <?php echo $link['name']; ?>
                     </a>
                 <?php } ?>
             </nav>
