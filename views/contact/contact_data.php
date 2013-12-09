@@ -2,7 +2,7 @@
 
 $contactData = array(
 	"title" => "Contact Us",
-	"content" => "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.",
+	"content" => "Have questions or concerns for our team? Shoot us an email here and we'll get back with you as soon as possible. Give us your name, email address, city where you reside, and a detailed message here. We love hearing from our clients and potential clients, so if you have any questions or concerns please do not hesitate to contact us!",
 	"formvars" => array(
 		"contact_email" => "testsite@test.com",
 		"submit_val" => "Send"

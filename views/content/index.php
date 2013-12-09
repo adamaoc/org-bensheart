@@ -42,7 +42,7 @@ require_once "../contact/contact_data.php";
 <section class="contact-section clearfix">
     <h2><?php echo $contact['title']; ?></h2>
     <p class="contact-text"><?php echo $contact['content']; ?></p>
-    <form method="Post">
+    <!-- <form method="Post" action="">
         <ul>
             <li class="clearfix">
                 <label for="name">Name</label>
@@ -59,10 +59,10 @@ require_once "../contact/contact_data.php";
                 </textarea>
             </li>
             <li class="clearfix">
-                <input type="submit" class="submit" value="<?php echo $contact['formvars']['submit_val']; ?>" />
+                <input type="submit" class="submit" value="<?php //echo $contact['formvars']['submit_val']; ?>" />
             </li>
         </ul>
-    </form>
+    </form> -->
 </section>
 
 <?php 
