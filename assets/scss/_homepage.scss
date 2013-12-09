@@ -1,0 +1,54 @@
+
+
+.main-banner {
+    background: #f1f1f1;
+    min-height: 300px;
+    position: relative;
+}
+.main-banner h2 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: black;
+    background: rgba(0,0,0,0.7);
+    padding: 5px 10px 5px 30px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 100;
+    max-width: 80%;
+    font-size: 85%;
+}
+@include bp(sm) {
+    .main-banner h2 {
+        max-width: 50%;
+        font-size: 95%;
+    }
+}
+
+.about-section .img-wrap {
+    width: 85%;
+    min-height: 200px;
+    height: auto;
+    background-color: #f1f1f1;
+    margin: 15px auto;
+    border-radius: 50%;
+    border: 10px solid $primary-color;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    @include bp(sm) {
+        width: 35%;
+        margin: 15px 5px;
+        float: left;
+    }
+}
+.about-section .content {
+    width: 85%;
+    max-width: 500px;
+    margin: 15px auto;
+    @include bp(sm) {
+        float: right;
+        width: 45%;
+        margin: 15px 5px;
+    }
+}

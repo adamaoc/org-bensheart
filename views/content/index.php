@@ -14,8 +14,8 @@ require_once "../contact/contact_data.php";
         <h2>About Us</h2>
         <p><?php echo $Info->blurbs; ?></p>
     </div>
-    <div class="img-wrap">
-    	<img src="/assets/img/about_img.jpg" alt="About <?php echo $Site->Headline; ?>" />
+    <div class="img-wrap" style="background-image: url(/assets/img/about_img.jpg);">
+        <p style="display: none;">About <?php echo $Site->Headline; ?></p>
     </div>
 </section>
 
