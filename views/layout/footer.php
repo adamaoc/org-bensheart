@@ -6,7 +6,7 @@
             </section>
         </footer>
 
-        <script src="js/main.js"></script>
+        <script src="/assets/js/main.js"></script>
 
         <!-- load anylitycs script  -->
         <script>
@@ -15,7 +15,7 @@
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			ga('create', 'UA-9674179-9', 'bensheart.org');
+			ga('create', '<?php echo $Site->google_analytics; ?>', '<?php echo $Info->website_url; ?>');
 			ga('send', 'pageview');
 		</script>
     </body>

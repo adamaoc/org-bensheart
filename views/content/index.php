@@ -2,40 +2,35 @@
 require_once "../../core/init.php";
 require_once "../content/sociallinks.php";
 require_once "../layout/header.php";
-require_once "../content/sections.php";
 require_once "../contact/contact_data.php";
 ?>
-<section class="main-banner clearfix" style="background: url(<?php echo $Website->MainBannerImg(); ?>) no-repeat bottom center; background-size: cover;">
+<section class="main-banner clearfix" style="background: url(http://<?php echo $Website->MainBannerImg(); ?>) no-repeat bottom center; background-size: cover;">
     <h2><?php echo $Website->MainBannerText(); ?></h2>
 </section>
 
-<section class="about-section clearfix">
-    <div class="content">
-        <h2>About Us</h2>
-        <p><?php echo $Info->blurbs; ?></p>
-    </div>
-    <div class="img-wrap" style="background-image: url(/assets/img/about_img.jpg);">
-        <p style="display: none;">About <?php echo $Site->Headline; ?></p>
-    </div>
-</section>
-
 <?php 
-	// print_r($Sections);
-    $sections = $Sections;
     $i = 1;
-    foreach ($sections as $section) { ?>
-        <section class="section<?php echo $i; ?> clearfix"> 
-            <h2><?php echo $section['title']; ?></h2>
-            <p><?php echo $section['content']; ?></p>
-            <?php if(!empty($section['mainIMG'])) {
+    foreach ($Website->Sections() as $section) {
+        ?>
+        <section class="section<?php echo $i; ?> <?php echo $section->section_slug; ?>-section clearfix">
+            <div class="content">
+                <h2 class="section-header">
+                    <?php echo $section->section_name; ?>
+                </h2>
+                <p><?php echo $section->section_text; ?></p>
+            </div>
+            <?php if(!$section->section_img == null) {
                 ?>
-                <img src="<?php echo $section['mainIMG']; ?>" alt="<?php echo $section['title']; ?>" />
-                <?php
-            } ?>
+				<div class="img-wrap" style="background-image: url(<?php echo "/assets/".$section->section_img; ?>);">
+					<span class="screen-reader"><?php echo $section->section_name." - ".$Info->website_name; ?></span>
+				</div>
+                <?php 
+            }
+            ?>
         </section>
-    <?php 
+        <?php
         $i++;
-    } // end site sections
+    }
     // print_r($contactData);
     $contact = $contactData;
 ?>

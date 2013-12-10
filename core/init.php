@@ -32,9 +32,8 @@ spl_autoload_register('autoload');
 require_once '../../functions/sanitize.php';
 
 $Website = new Website;
+$Info = $Website->getInfo()->first();
 $Site = $Website->getWebsite()->first();
-$Info = $Website->info()->first();
-$Media = $Website->media();
 
 // Check for users that have requested to be remembered
 // if(Cookie::exists(Config::get('remember/cookie_name'))) {

@@ -341,6 +341,9 @@ RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteRule ^$ ./views/content/index.php [L]
 RewriteRule ^/?$ ./views/content/index.php [L]
 
+RewriteRule ^about$ ./views/about/index.php [L]
+RewriteRule ^about/?$ ./views/about/index.php [L]
+
 </IfModule>
 
 

@@ -535,13 +535,13 @@ h2 {
   float: right; }
 
 @media (min-width: 35em) {
-  /* line 85, ../scss/_layout.scss */
+  /* line 86, ../scss/_layout.scss */
   .site-logo {
     max-width: 45%;
     text-align: left;
     float: left; }
 
-  /* line 90, ../scss/_layout.scss */
+  /* line 91, ../scss/_layout.scss */
   .pri-nav {
     margin-right: 2%;
     min-width: 30%; } }
@@ -602,13 +602,23 @@ h2 {
     margin: 15px 5px; } }
 
 /* line 2, ../scss/_sections.scss */
-.section2 {
+.section3 {
   background: #f1f1f1;
   min-height: 400px; }
+/* line 5, ../scss/_sections.scss */
+.section3 .img-wrap {
+  min-height: 300px;
+  background-size: cover;
+  background-position: center center; }
 
-/* line 7, ../scss/_sections.scss */
-.section3 {
+/* line 12, ../scss/_sections.scss */
+.section4 {
   min-height: 400px; }
+
+/* line 16, ../scss/_sections.scss */
+.screen-reader {
+  text-indent: -999em;
+  display: block; }
 
 /* line 1, ../scss/_contact.scss */
 .contact-section {
